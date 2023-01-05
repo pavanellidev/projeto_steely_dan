@@ -23,6 +23,7 @@ li, a  {
    justify-content: space-between;
    align-items: center;
    padding: 25px 13%;
+   margin-bottom: 150px;
 }
 
 .nav-links {
@@ -49,7 +50,7 @@ li, a  {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   padding-bottom: 70px;
+   padding-bottom: 150px;
 
 }
 
@@ -85,16 +86,67 @@ li, a  {
    color: #64342c;
    margin-top: 80px;
    background-color: #d68d65;
-   padding-top: 65px;
+   padding-top: 95px;
 }
 
 .music {
-   padding-top: 60px;
+   padding-top: 100px;
    text-align: center;
    background-color: #d68d65;
-   padding-bottom: 100px;
+   padding-bottom: 200px;
 }
 
 #caixa {
    box-shadow: 3px 2px 12px #64342c;
 }
+
+/* Imagens */
+
+.imageBoxPai {
+   display: flex;
+   justify-content: center;
+}
+
+.imageBox {
+   margin-top: 200px;
+   display: block;
+   margin-bottom: 200px;
+}
+
+.images {
+   width: 950px;
+   height: 534px;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.slides .slide img {
+   width: 100%;
+   height: 100%;
+}
+
+.navigation {
+   display: flex;
+   margin-left: 350px;
+   padding-top: 10px
+}
+
+.labels {
+   width: 15px;
+   height: 15px;
+   border: 3px solid #64342c;
+   margin: 6px;
+   border-radius: 2px;
+   cursor: pointer;
+   transition: .4s ease;
+}
+
+.labels:hover {
+   background-color: #64342c;
+}
+
+input {
+   display: none;
+}
+
