@@ -5,6 +5,10 @@
    font-family: 'Roboto', sans-serif;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    background-color: #ffe2b8;
 }
@@ -23,7 +27,11 @@ li, a  {
    justify-content: space-between;
    align-items: center;
    padding: 25px 13%;
-   margin-bottom: 150px;
+   margin-bottom: 150px; 
+}
+
+.nav-bar:hover {
+   border-bottom: 2px solid #64342c;
 }
 
 .nav-links {
@@ -64,7 +72,6 @@ li, a  {
 .bio h2 {
    text-align: center;
    padding-bottom: 30px;
-   padding-top: 20px;
    font-size: 44px;
    color: #64342c;
 }
@@ -90,17 +97,42 @@ li, a  {
 }
 
 .music {
+   display: flex;
    padding-top: 100px;
    text-align: center;
    background-color: #d68d65;
    padding-bottom: 200px;
+   justify-content: space-around;
+   flex-wrap: wrap;
 }
 
 #caixa {
    box-shadow: 3px 2px 12px #64342c;
 }
 
+h4 {
+   padding-bottom: 4px;
+}
+
+.music video {
+   width: 250px;
+   height: 250px;
+   padding-left: 45px;
+}
+
+.musica audio {
+   padding-bottom: 20px;
+}
+
 /* Imagens */
+
+#images-title {
+   text-align: center;
+   font-size: 44px;
+   color: #64342c;
+   margin-top: 40px;
+   padding-top: 65px;
+}
 
 .imageBoxPai {
    display: flex;
@@ -108,7 +140,7 @@ li, a  {
 }
 
 .imageBox {
-   margin-top: 200px;
+   margin-top: 100px;
    display: block;
    margin-bottom: 200px;
 }
@@ -128,7 +160,7 @@ li, a  {
 
 .navigation {
    display: flex;
-   margin-left: 350px;
+   margin-left: 400px;
    padding-top: 10px
 }
 
@@ -150,3 +182,18 @@ input {
    display: none;
 }
 
+.scrollbutton {
+   width: 36px;
+   height: 32px;
+   height: auto;
+   position: fixed;
+   right: 15px;
+   bottom: 15px;
+   cursor: pointer;
+   display: none;
+}
+
+.scrollbutton img {
+   width: 100%;
+   height: 100%;
+}

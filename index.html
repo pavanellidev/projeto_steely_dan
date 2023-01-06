@@ -7,6 +7,7 @@
    <title>Steely Dan</title>
    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
+   <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -15,9 +16,9 @@
       <img src="images/sdlogo.png" alt="logo">
       <nav>
          <ul class="nav-links">
-            <li><a href="#">Músicas</a></li>
-            <li><a href="#">Vídeos</a></li>
-            <li><a href="#">Imagens</a></li>
+            <li><a href="#music-title">Músicas</a></li>
+            <li><a href="#images-title">Fotos</a></li>
+            <li><a href="#video-link">Vídeos</a></li>
          </ul>
       </nav>
    </header>
@@ -26,35 +27,55 @@
       <img src="images/sd1.webp" alt="Steely">
       <div class="text">
          <h2>Steely Dan</h2>
-         <p>Formada por Donald Fagen e Walter Becker, Steely Dan é uma banda de Jazz Rock dos anos 70, conhecida pelo perfeccionismo harmônico e sofisticação de melodias. Alguns dos músicos mais renomados do Rock e do Jazz, como Larry Carlton, Michael McDonald e Jeff Porcaro já gravaram com eles.</p>
+         <p>Formada por Donald Fagen e Walter Becker, Steely Dan é uma banda de Jazz - Rock dos anos 70, conhecida pelo perfeccionismo harmônico, melodias sofisticadas e primorosa produção musical. Alguns dos músicos mais renomados do Rock e do Jazz, como Larry Carlton, Michael McDonald e Jeff Porcaro já gravaram com eles. Um de seus principais albuns de studio, Aja de 1977, posteriormente rendeu até um documentário sobre os bastidores de gravação.</p>
       </div>
    </section>
 
    <div id="caixa">
       <h2 id="music-title">Músicas</h2>
       <section class="music">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/2A0wGO3c2T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yw74sDWPH7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <div class="musica">
+            <h4>Deacon Blues - (Aja - 1977)</h4>
+            <img src="images/Aja_album_cover.jpg" alt="aja"><br>
+            <audio src="videos/deaconblues.mp3" controls>Deacon Blues</audio>
+         </div>
+         <div class="musica">
+            <h4>Don't take me Alive - (The Royal Scam - 1976)</h4>
+            <img src="images/The_Royal_Scam_album_cover.jpg" alt=""><br>
+            <audio src="videos/dontakemealive.mp4" controls></audio>
+         </div>
+         <div class="musica">
+            <h4>Gaucho - (Gaucho - 1980)</h4>
+            <img src="images/gauchocover.jpg" alt=""><br>
+            <audio src="videos/gaucho.mp3" controls></audio>
+         </div>
+         <div class="musica">
+            <h4>Night by Night - (Pretzel Logic - 1974)</h4>
+            <img src="images/pretzel.jpg" alt=""><br>
+            <audio src="videos/Night By Night.mp3" controls></audio>
+         </div>
    </div>
 
-   </section>
+      </section>
 
-   <div class="imageBoxPai">
-      <div class="imageBox">
-         <section class="images">
-            <div class="slides">
-               <input type="radio" class="input" name="select" id="select1">
-               <input type="radio" class="input" name="select" id="select2">
-               <input type="radio" class="input" name="select" id="select3">
-               <input type="radio" class="input" name="select" id="select4">
+      <h2 id="images-title">Fotos</h2>
+      
+      <div class="imageBoxPai">
+         <div class="imageBox">
+            <section class="images">
+               <div class="slides">
+                  <input type="radio" class="input" name="select" id="select1">
+                  <input type="radio" class="input" name="select" id="select2">
+                  <input type="radio" class="input" name="select" id="select3">
+                  <input type="radio" class="input" name="select" id="select4">
                <div class="slide">
                   <img src="images/sd2.webp" alt="">
                   <img src="images/sd3.jpg" alt="">
                   <img src="images/sd4.jpg" alt="">
                   <img src="images/sd5.jpg" alt="">
                </div>
-            </div>
-         </section>
+             </div>
+            </section>
          <div class="navigation">
             <label class="labels" for="select1"></label>
             <label class="labels" for="select2"></label>
@@ -65,7 +86,22 @@
       </div>
    </div>
 
-   
+   <div id="caixa">
+      <h2 id="music-title">Vídeos</h2>
+      <section class="music">
+         <p id="video-link"></p>
+         <div class="musica">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yQdgQWMJ1EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+         <div class="musica">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SjXB894CZnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+         <div class="musica">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ua3-V0zg7BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+   </div>
+
+   <div onclick="subirTela()" class="scrollbutton"><img src="images/arrow.png"></div>
 
 </body>
 
