@@ -319,6 +319,10 @@ input {
       transition: 0.5s ergb(12, 11, 10)
    }
 
+   .sd-header {
+      padding-left: 30px;
+   }
+
 }
 
 @media (max-width: 370px) {
@@ -332,12 +336,12 @@ input {
    }
 
    .sd-logo {
-      width: 190px;
+      width: 180px;
       height: auto;
    }
 
    .nav-li a {
-      font-size: 27px;
+      font-size: 23px;
    }
 
    .bio-p {
@@ -347,5 +351,7 @@ input {
       padding: 10px;
    }
 
-   
+   .sd-header {
+      padding-left: 20px;
+   }
 }
