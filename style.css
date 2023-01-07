@@ -120,6 +120,7 @@ body {
 
 .music-box h4 {
    padding-bottom: 5px;
+   flex-wrap: nowrap;
 }
 
 /* Videos */
