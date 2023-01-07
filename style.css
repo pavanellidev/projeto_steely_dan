@@ -114,6 +114,10 @@ body {
    flex-wrap: wrap;
 }
 
+.music-div {
+   padding-top: 15px;
+}
+
 .music-box h4 {
    padding-bottom: 5px;
 }
@@ -230,7 +234,7 @@ input {
 .bar {
    width: 55px;
    height: 19px;
-   border: 3px solid #d37f52;
+   border: 2px solid #d37f52;
    margin: 6px;
    border-radius: 5px;
    cursor: pointer;
@@ -305,6 +309,16 @@ input {
       padding: 20px;
    }
 
+   .bar {
+      width: 35px;
+      height: 13px;
+      border: 1px solid #d37f52;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.5s ergb(12, 11, 10)
+   }
+
 }
 
 @media (max-width: 370px) {
@@ -332,4 +346,6 @@ input {
       line-height: 1.1;
       padding: 10px;
    }
+
+   
 }
