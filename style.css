@@ -35,7 +35,7 @@ body {
 
 .nav-li a {
    text-decoration: none;
-   font-size: 47px;
+   font-size: 40px;
    padding-left: 25px;
    color: #a15e3b;
    font-weight: bold;
@@ -115,7 +115,7 @@ body {
 }
 
 .music-div {
-   padding-top: 15px;
+   padding-top: 15px; 
 }
 
 .music-box h4 {
@@ -288,7 +288,7 @@ input {
    }
 
    .sd-logo {
-      width: 190px;
+      width: 230px;
       height: auto;
    }
 
@@ -320,9 +320,20 @@ input {
    }
 
    .sd-header {
-      padding-left: 30px;
+      padding-left: 44px;
    }
 
+}
+
+@media (max-width: 515px) {
+   .sd-logo {
+      width: 200px;
+      height: auto;
+   }
+
+   .nav-li a {
+      font-size: 26px;
+   }
 }
 
 @media (max-width: 370px) {
@@ -352,6 +363,6 @@ input {
    }
 
    .sd-header {
-      padding-left: 20px;
+      padding-left: 25px;
    }
 }
