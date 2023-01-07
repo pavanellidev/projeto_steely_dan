@@ -15,3 +15,7 @@ function showButton() {
 }
 
 window.addEventListener('scroll', showButton);
+
+function checarInputs () {
+   
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Steely Dan</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script src="index.js" defer></script>
+</head>
+<body>
+
+   <header class="sd-header">
+      <img class="sd-logo" src="images/sdlogo.png" alt="Steely Dan Logo">
+      <nav>
+         <ul class="nav-links">
+            <li class="nav-li"><a href="#music">Músicas</a></li>
+            <li class="nav-li"><a href="#fotos">Fotos</a></li>
+            <li class="nav-li"><a href="#videos">Vídeos</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <section class="biography">
+      <img class="main-picture" src="images/sd1.webp" alt="Steely Dan foto principal">
+      <div class="biography-text">
+         <h2 class="bio-h2">Steely Dan</h2>
+         <p class="bio-p">Formada por Donald Fagen e Walter Becker, Steely Dan é uma banda de Jazz - Rock dos anos 70, conhecida pelo perfeccionismo harmônico, melodias sofisticadas e primorosa produção musical. Alguns dos músicos mais renomados do Rock e do Jazz, como Larry Carlton, Michael McDonald e Jeff Porcaro já gravaram com eles. Um de seus principais albuns de estudio, Aja de 1977 posteriormente rendeu até um documentário sobre os bastidores de gravação.</p>
+      </div>
+   </section>
+
+   <section class="music" id="music">
+
+      <h2>Músicas</h2>
+
+      <div class="music-box">
+
+         <div>
+            <h4>Deacon Blues - (Aja - 1977)</h4>
+            <img src="images/Aja_album_cover.jpg" alt="aja"><br>
+            <audio src="videos/deaconblues.mp3" controls>Deacon Blues</audio>
+         </div>
+
+         <div>
+            <h4>Don't take me Alive - (Royal Scam - 1976)</h4>
+            <img src="images/The_Royal_Scam_album_cover.jpg" alt=""><br>
+            <audio src="videos/dontakemealive.mp4" controls></audio>
+         </div>
+
+         <div>
+            <h4>Gaucho - (Gaucho - 1980)</h4>
+            <img src="images/gauchocover.jpg" alt=""><br>
+            <audio src="videos/gaucho.mp3" controls></audio>
+         </div>
+
+         <div>
+            <h4>Night by Night - (Pretzel Logic - 1974)</h4>
+            <img src="images/pretzel.jpg" alt=""><br>
+            <audio src="videos/Night By Night.mp3" controls></audio>
+         </div>
+
+      </div>
+
+   </section>
+
+   <section class="videos" id="videos">
+      <h2>Vídeos</h2>
+      <div class="video-box">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/yQdgQWMJ1EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/SjXB894CZnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Ua3-V0zg7BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+   </section>  
+
+   <section class="pictures" id="fotos">
+
+      <h2>Fotos</h2>
+      <div class="content">
+
+         <div class="slides">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+
+            <div class="slide s1">
+               <img src="images/sd2.webp" alt="Steely Dan Band">
+            </div>
+
+            <div class="slide">
+               <img src="images/sd3.jpg" alt="Steely Dan Band">
+            </div>
+
+            <div class="slide">
+               <img src="images/sd4.jpg" alt="Steely Dan Band">
+            </div>
+
+            <div class="slide">
+               <img src="images/sd5.jpg" alt="Steely Dan Band">
+            </div>
+
+         </div>
+
+         <div class="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+         </div>
+
+      </div>
+
+   </section>
+
+
+   <div onclick="subirTela()" class="scrollbutton"><img src="images/arrow.png"></div>
+</body>
+</html>
