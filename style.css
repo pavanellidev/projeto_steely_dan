@@ -44,7 +44,7 @@ body {
 
 .nav-li a:hover {
    color: #64342c;
-   font-size: 49px;
+   font-size: 42px;
 }
 
 /* Biografia */
@@ -300,6 +300,10 @@ input {
       font-size: 33px;
    }
 
+   .nav-li a:hover {
+      font-size: 35px;
+   }
+
    .pictures {
       height: 500px;
    }
@@ -334,6 +338,10 @@ input {
    .nav-li a {
       font-size: 26px;
    }
+
+   .nav-li a:hover {
+      font-size: 28px;
+   }
 }
 
 @media (max-width: 370px) {
@@ -353,6 +361,10 @@ input {
 
    .nav-li a {
       font-size: 23px;
+   }
+
+   .nav-li a:hover {
+      font-size: 25px;
    }
 
    .bio-p {
