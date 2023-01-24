@@ -25,6 +25,11 @@ body {
    border-bottom: 1px solid #64342c8f;
 }
 
+#burger {
+   display: none;
+   padding: 10px;
+}
+
 .nav-links {
    list-style: none;
 }
@@ -297,11 +302,11 @@ input {
    }
 
    .nav-li a {
-      font-size: 33px;
+      font-size: 29px;
    }
 
    .nav-li a:hover {
-      font-size: 35px;
+      font-size: 31px;
    }
 
    .pictures {
@@ -344,7 +349,21 @@ input {
    }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 413px) {
+   
+  .sd-header {
+   display: block;
+  }
+
+  #burger {
+   display: block;
+   text-align: center;
+  }
+  
+   #itens {
+      display: none;
+   }
+
    .content {
       width: 360px;
       height: 205px;
@@ -355,12 +374,20 @@ input {
    }
 
    .sd-logo {
-      width: 180px;
+      width: 210px;
       height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .nav-links {
+      text-align: center;
    }
 
    .nav-li a {
       font-size: 23px;
+      padding-left: 10px;
    }
 
    .nav-li a:hover {
