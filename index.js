@@ -22,5 +22,4 @@ function clickMenu() {
    } else {
       itens.style.display = 'block'
    }
-   
 }
